@@ -1,0 +1,9 @@
+<launch>
+
+    <node pkg="joy" type="joy_node" name="joy_node">
+    <param name="deadzone" value="0.1"/>
+    </node>
+    <node pkg="cth_hrp_cobot" type="xbox_teleop.py" name="xbox_teleop"/>
+    <node pkg="cth_hrp_cobot" type="comms_agv.py" name="comms_agv" output="screen"/>
+
+</launch>
